@@ -4,4 +4,6 @@
         settings.user.name = "Cunha-Renato";
         settings.user.email = "cunhamrenato@gmail.com";
     };
+    
+    programs.gh.enable = true;
 }
