@@ -9,6 +9,7 @@
         vscode
 
         # Programming
+        gcc
         nodejs
         python311
         lean4

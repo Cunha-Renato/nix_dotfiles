@@ -1,7 +1,7 @@
 {
     imports = [
+        ./ghostty.nix
         ./git.nix
         ./zsh.nix
-        ./ghostty.nix
     ];
 }
