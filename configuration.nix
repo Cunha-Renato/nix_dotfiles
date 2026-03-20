@@ -10,11 +10,19 @@
       ./hardware-configuration.nix
     ];
 
+  # For flakes support
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  # Garbage collection
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+  };
+
   # Bootloader.
+  boot.loader.systemd-boot.configurationLimit = 5;
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -90,7 +98,9 @@
   };
 
   # Install firefox.
-  programs.firefox.enable = true;
+#   programs.firefox.enable = true;
+
+  # Enable AppImage support
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
 

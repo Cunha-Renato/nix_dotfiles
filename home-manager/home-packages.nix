@@ -11,6 +11,7 @@
         # Programming
         nodejs
         python311
+        lean4
         # -> RUST
         rustc
         cargo
