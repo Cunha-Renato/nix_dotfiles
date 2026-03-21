@@ -20,5 +20,9 @@
         cargo
         rustfmt
         clippy
+        
+        # Utils
+        zip
+        unzip
     ];
 }
