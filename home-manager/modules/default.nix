@@ -6,6 +6,7 @@
         ./wofi/default.nix
         ./ghostty.nix
         ./git.nix
+        ./kitty.nix
         ./zsh.nix
     ];
 }
