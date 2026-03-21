@@ -14,6 +14,7 @@
         lean4
         nodejs
         nodePackages.pnpm
+        biome
         # -> RUST
         rustc
         cargo
