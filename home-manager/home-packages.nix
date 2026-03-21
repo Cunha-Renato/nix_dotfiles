@@ -10,9 +10,10 @@
 
         # Programming
         gcc
-        nodejs
         python311
         lean4
+        nodejs
+        nodePackages.pnpm
         # -> RUST
         rustc
         cargo
