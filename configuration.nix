@@ -1,20 +1,26 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
   imports =
     [ 
       ./hardware-configuration.nix
-      ./modules/default.nix
     ];
 
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
+  nix.gc = {
+    automatic = true;
+    dates = "daily";
+  };
+
+  networking.hostName = "nixos"; # Define your hostname.
+  networking.networkmanager.enable = true;
+
+  # Set your time zone.
   time.timeZone = "America/Sao_Paulo";
 
+  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -29,19 +35,56 @@
     LC_TIME = "pt_BR.UTF-8";
   };
 
-#   services.printing.enable = true;
+  # Enable the X11 windowing system.
+  services.xserver.enable = true;
+
+  # Hyprland
+  programs.hyprland = {
+  	enable = true;
+	xwayland.enable = true;
+  };
+  services.displayManager.sddm.enable = true;
+  services.displayManager.defaultSession = "hyprland";
+  security.polkit.enable = true;
+  hardware.graphics.enable = true;
+
+  # Configure keymap in X11
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "";
+  };
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  services.printing.enable = true;
+
+  services.pulseaudio.enable = false;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
 
   users.users.l3gion = {
     isNormalUser = true;
     description = "l3gion";
     extraGroups = [ "networkmanager" "wheel" ];
+    packages = with pkgs; [];
   };
 
-#   programs.firefox.enable = true;
+  nixpkgs.config.allowUnfree = true;
 
+  programs.firefox.enable = true;
+  programs.appimage.enable = true;
+  programs.appimage.binfmt = true;
   environment.systemPackages = with pkgs; [
-    home-manager
+  	home-manager
+  	neovim
+	git
+	kitty
   ];
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "25.11"; # Did you read the comment?
 }

@@ -1,13 +1,13 @@
 {
-    programs.ghostty = {
-        enable = true;
-        
-        settings = {
-            font-family = "Cascadia Code";
-            font-size = 12;
-            cursor-style = "block";
+	programs.ghostty = {
+		enable = true;
 
-            command = "zsh";
-        };
-    };
+		settings = {
+			font-family = "Cascadia Code";
+			font-size = "12";
+			cursor-style = "block";
+
+			command = "zsh";
+		};
+	};
 }

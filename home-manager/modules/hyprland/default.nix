@@ -1,7 +1,5 @@
 {
-    imports = [
-        ./hyprlock.nix
-        ./hyprpaper.nix
-        ./main.nix
-    ];
+	imports = [
+		./main.nix
+	];
 }

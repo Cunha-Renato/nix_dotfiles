@@ -1,5 +1,0 @@
-{
-    environment.sessionVariables = {
-        TERMINAL = "ghostty";
-    };
-}
