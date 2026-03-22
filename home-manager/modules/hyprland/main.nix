@@ -49,6 +49,9 @@
             
             input = {
                 kb_layout = "us,br";
+                touchpad = {
+                    natural_scroll = true;
+                };
             };
             
             gestures = {
