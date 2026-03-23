@@ -51,6 +51,7 @@
                 kb_layout = "us,br";
                 touchpad = {
                     natural_scroll = true;
+                    scroll_factor = 0.2;
                 };
             };
             
