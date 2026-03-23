@@ -78,8 +78,8 @@
 			bind = [
 				"$mainMod,      RETURN, exec, $terminal"
                 "$mainMod,      W, killactive,"
-                "$mainMod,      D, togglefloating,"
-                "$mainMod,      A, fullscreen,"
+                "$mainMod,      D, fullscreen, 1"
+                "$mainMod,      A, fullscreen, 0"
                 "$mainMod,      SPACE, exec, $menu --show drun"
                 "$mainMod,      P, pin,"
                 "$mainMod,      N, exec, swaync-client -t"
