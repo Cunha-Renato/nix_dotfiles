@@ -19,7 +19,7 @@
 				"QT_QPA_PLATFORM,wayland"
 			];
 
-			monitor = ",1920x1080@60,auto,auto";
+			monitor = ",1920x1080@60,auto,1.25";
 
             general = {
                 gaps_in = 0;
