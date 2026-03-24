@@ -50,6 +50,7 @@
             
             input = {
                 kb_layout = "us,br";
+                kb_options = "caps:escape";
                 touchpad = {
                     natural_scroll = true;
                     scroll_factor = 0.2;
