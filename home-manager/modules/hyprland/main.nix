@@ -3,7 +3,6 @@
         brightnessctl
 		kitty
 		networkmanagerapplet
-		waybar
 		wofi
 	];
 
@@ -22,11 +21,17 @@
 			monitor = ",1920x1080@60,auto,1.25";
 
             general = {
-                gaps_in = 0;
-                gaps_out = 0;
+                gaps_in = 2;
+                gaps_out = 2;
                 
                 border_size = 2;
                 resize_on_border = true;
+
+                "col.active_border" = "rgb(ebdbb2) rgb(d65d0e) 60deg";
+                "col.inactive_border" = "rgb(161320)";
+            
+                layout = "master";
+                allow_tearing = false;
             };
             
             decoration = {
@@ -45,7 +50,18 @@
             };
 
             animations = {
-                enabled = false;
+                enabled = true;
+
+                bezier = "myBezier,0, 0, 0.58, 1";
+
+                animation = [
+                    "windows, 1, 2, myBezier"
+                    "windowsOut, 1, 2, myBezier, popin 80%"
+                    "border, 1, 2, myBezier"
+                    "borderangle, 1, 2, myBezier"
+                    "fade, 1, 2, myBezier"
+                    "workspaces, 1, 2, myBezier"
+                ];
             };
             
             input = {

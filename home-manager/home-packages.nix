@@ -2,7 +2,7 @@
 	nixpkgs.config.allowUnfree = true;
 
 	home.packages = with pkgs; [
-		# AppImage
+        # AppImage
 		gearlever
 
 		neovim

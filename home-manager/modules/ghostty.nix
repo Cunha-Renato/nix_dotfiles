@@ -3,7 +3,7 @@
 		enable = true;
 
 		settings = {
-			font-family = "Cascadia Code";
+			font-family = "JetbrainsMono Nerd Font";
 			font-size = "12";
 			cursor-style = "block";
 
