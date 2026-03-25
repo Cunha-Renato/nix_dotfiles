@@ -97,6 +97,7 @@
 
 			exec-once = [
 				"waybar"
+                "hyprpaper"
 				"nm-applet"
 			];
 
