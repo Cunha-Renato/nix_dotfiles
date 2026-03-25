@@ -3,6 +3,7 @@
 {
     imports =
     [ 
+        ./modules
         ./hardware-configuration.nix
     ];
 
@@ -35,24 +36,6 @@
         LC_TIME = "pt_BR.UTF-8";
     };
 
-    # Enable the X11 windowing system.
-    services.xserver.enable = true;
-
-    # Hyprland
-    programs.hyprland = {
-  	    enable = true;
-	    xwayland.enable = true;
-    };
-    services.displayManager.sddm.enable = true;
-    services.displayManager.defaultSession = "hyprland";
-    security.polkit.enable = true;
-    hardware.graphics.enable = true;
-
-    # Configure keymap in X11
-    services.xserver.xkb = {
-        layout = "us";
-        variant = "";
-    };
 
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -84,6 +67,7 @@
   	    neovim
 	    git
 	    kitty
+        uwsm
     ];
 
     system.stateVersion = "25.11"; # Did you read the comment?

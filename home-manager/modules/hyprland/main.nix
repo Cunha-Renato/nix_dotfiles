@@ -13,6 +13,7 @@
 
 	wayland.windowManager.hyprland = {
 		enable = true;
+        systemd.enable = true;
 
 		settings = {
 			env = [
@@ -96,6 +97,7 @@
             "$fileExplorer" = "dolphin";
 
 			exec-once = [
+                "hyprlock"
 				"waybar"
                 "hyprpaper"
 				"nm-applet"
