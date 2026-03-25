@@ -11,7 +11,7 @@
             label = {
                 text = "$TIME";
                 font_size = 96;
-                font_family = "Cascadia Code";
+                font_family = "JetbrainsMono Nerd Font";
                 color = "rgba(235, 219, 178, 1.0)";
                 position = "0, 600";
                 halign = "center";
