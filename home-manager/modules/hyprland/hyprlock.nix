@@ -7,17 +7,25 @@
                 hide_cursor = true;
                 no_fade_in = false;
             };
+            
+            background = [{
+                monitor = "";
+                path = "$HOME/nix_dotfiles/wallpapers/ck3_wallpaper.png";
+                blur_passes = 1;
+                blur_size = 5;
+            }];
 
             label = {
                 text = "$TIME";
                 font_size = 96;
-                font_family = "JetbrainsMono Nerd Font";
-                color = "rgba(235, 219, 178, 1.0)";
-                position = "0, 600";
-                halign = "center";
-                walign = "center";
+                font_family = "JetBrainsMono Nerd Font";
+                color = "rgba(ebdbb8ff)";
 
-                shadow_passes = 1;
+                position = "0, 300";
+                halign = "center";
+                valign = "center";
+
+                shadow_passes = 0;
             };
 
             input-field = [{
@@ -25,11 +33,11 @@
                 position = "0, -80";
                 monitor = "";
                 dots_center = true;
-                font_color = "rgb(235, 219, 178)";
-                inner_color = "rgb(40, 40, 40)";
-                outer_color = "rgb(60, 56, 54)";
-                outline_thickness = 5;
-                shadow_passes = 1;
+                font_color = "rgba(f8bd96ff)";
+                inner_color = "rgba(161632ff)";
+                outline_thickness = 0;
+                shadow_passes = 0;
+                placeholder_text = "Enter password";
             }];
         };
     };
