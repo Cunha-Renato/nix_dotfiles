@@ -1,9 +1,14 @@
 { pkgs, ... }: {
 	home.packages = with pkgs; [
         brightnessctl
+        kdePackages.dolphin
 		kitty
 		networkmanagerapplet
 		wofi
+        # Screenshot
+        grim
+        slurp
+        swappy
 	];
 
 	wayland.windowManager.hyprland = {
@@ -88,6 +93,7 @@
 			"$mainMod" = "SUPER";
 			"$terminal" = "ghostty";
             "$menu" = "wofi";
+            "$fileExplorer" = "dolphin";
 
 			exec-once = [
 				"waybar"
@@ -96,12 +102,14 @@
 
 			bind = [
 				"$mainMod,      RETURN, exec, $terminal"
+                "$mainMod,      SPACE, exec, $menu --show drun"
+                ", PRINT, exec, grim -g \"$(slurp)\" - | swappy -f -"
+                "$mainMod,      E, exec, $fileExplorer"
+                "$mainMod,      N, exec, swaync-client -t"
                 "$mainMod,      W, killactive,"
                 "$mainMod,      D, fullscreen, 1"
                 "$mainMod,      A, fullscreen, 0"
-                "$mainMod,      SPACE, exec, $menu --show drun"
                 "$mainMod,      P, pin,"
-                "$mainMod,      N, exec, swaync-client -t"
 
                 # Moving focus
                 "$mainMod, H, movefocus, l"
