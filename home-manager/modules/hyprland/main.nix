@@ -16,6 +16,8 @@
 				"XDG_SESSION_DESKTOP,Hyprland"
 				"XDG_SESSION_TYPE,wayland"
 				"QT_QPA_PLATFORM,wayland"
+                #"XCURSOR_THEME,Capitaine Cursors"
+                #"XCURSOR_SIZE,16"
 			];
 
 			monitor = ",1920x1080@60,auto,1.25";

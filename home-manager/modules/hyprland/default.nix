@@ -1,7 +1,8 @@
 {
 	imports = [
+        ./cursor.nix
         ./hyprlock.nix
-		./main.nix
+        ./main.nix
         ./swaync.nix
         ./waybar
         ./wofi
