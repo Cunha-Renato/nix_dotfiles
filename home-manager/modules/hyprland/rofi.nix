@@ -9,7 +9,7 @@
             modi = "drun,run";
             show-icons = true;
             drun-display-format = "{icon} {name}";
-            display-drun = "Apps";
+            display-drun = "";
             display-run = "Run";
             location = 0;
             disable-history = false;
@@ -34,10 +34,10 @@
             "window" = {
                 background-color = mkLiteral "@bg0";
                 border = mkLiteral "2px solid";
-                border-color = mkLiteral "#ebdbb2";
+                border-color = mkLiteral "#504945";
                 border-radius = mkLiteral "12px";
                 width = mkLiteral "500px";
-                padding = mkLiteral "2px";
+                padding = mkLiteral "3px";
             };
 
             "mainbox" = {
@@ -49,7 +49,7 @@
             "inputbar" = {
                 background-color = mkLiteral "@bg1";
                 border-radius = mkLiteral "8px";
-                padding = mkLiteral "8px 12px";
+                padding = mkLiteral "8px 2px";
                 children = mkLiteral "[prompt, entry]";
                 spacing = mkLiteral "8px";
             };
@@ -61,8 +61,7 @@
             "entry" = {
                 background-color = mkLiteral "transparent";
                 text-color = mkLiteral "@fg0";
-                placeholder = "Search...";
-                placeholder-color = mkLiteral "@fg4";
+                placeholder = "";
             };
 
             "listview" = {
