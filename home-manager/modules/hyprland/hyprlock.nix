@@ -10,7 +10,7 @@
             
             background = [{
                 monitor = "";
-                path = "$HOME/nix_dotfiles/wallpapers/lock_scr.jpg";
+                path = "$HOME/wallpapers/lock_scr.jpg";
                 blur_passes = 1;
                 blur_size = 2;
             }];
