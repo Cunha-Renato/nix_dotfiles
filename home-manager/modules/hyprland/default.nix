@@ -7,6 +7,6 @@
         ./main.nix
         ./swaync.nix
         ./waybar
-        ./wofi
+        ./rofi.nix
 	];
 }

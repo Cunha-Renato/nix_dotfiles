@@ -102,7 +102,7 @@
 
 			"$mainMod" = "SUPER";
 			"$terminal" = "ghostty";
-            "$menu" = "wofi";
+            "$menu" = "rofi";
             "$fileExplorer" = "nautilus";
 
 			exec-once = [
@@ -114,7 +114,7 @@
 
 			bind = [
 				"$mainMod,      RETURN, exec, $terminal"
-                "$mainMod,      SPACE, exec, $menu --show drun"
+                "$mainMod,      SPACE, exec, $menu -show drun"
                 ", PRINT, exec, grim -g \"$(slurp)\" - | swappy -f -"
                 "$mainMod,      E, exec, $fileExplorer"
                 "$mainMod,      N, exec, swaync-client -t"
