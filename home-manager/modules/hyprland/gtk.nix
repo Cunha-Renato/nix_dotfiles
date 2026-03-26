@@ -10,6 +10,11 @@
     
     gtk = {
         enable = true;
+
+        theme = {
+            name = "Gruvbox-Dark";
+        };
+
         cursorTheme = {
             package = pkgs.capitaine-cursors;
             name = "capitaine-cursors";

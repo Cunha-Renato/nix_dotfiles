@@ -10,7 +10,7 @@
             splash = false;
 
             wallpaper = [{
-                monitor = "eDP-1";
+                monitor = "*";
                 path = "${config.home.homeDirectory}/wallpapers";
                 timeout = 300;
                 fit_mode = "cover";

@@ -1,7 +1,6 @@
 { pkgs, ... }: {
 	home.packages = with pkgs; [
         brightnessctl
-        kdePackages.dolphin
 		kitty
 		networkmanagerapplet
 		wofi
@@ -10,6 +9,10 @@
         slurp
         swappy
         swayimg
+        
+        # File Managers
+        nautilus
+        yazi
 	];
 
 	wayland.windowManager.hyprland = {
@@ -100,7 +103,7 @@
 			"$mainMod" = "SUPER";
 			"$terminal" = "ghostty";
             "$menu" = "wofi";
-            "$fileExplorer" = "dolphin";
+            "$fileExplorer" = "nautilus";
 
 			exec-once = [
                 "hyprlock"

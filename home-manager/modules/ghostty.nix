@@ -3,7 +3,8 @@
 		enable = true;
 
 		settings = {
-			font-family = "JetbrainsMono Nerd Font";
+            theme = "Gruvbox Material Dark";
+			font-family = "Cascadia Code";
 			font-size = "12";
 			cursor-style = "block";
 

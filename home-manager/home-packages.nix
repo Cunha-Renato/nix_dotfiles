@@ -5,6 +5,7 @@
         # AppImage
 		gearlever
 
+        # Editors
 		neovim
 		vscode
 

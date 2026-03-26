@@ -1,6 +1,6 @@
 {
 	imports = [
-        ./cursor.nix
+        ./gtk.nix
         ./hypridle.nix
         ./hyprlock.nix
         ./hyprpaper.nix
