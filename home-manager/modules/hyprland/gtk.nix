@@ -11,13 +11,23 @@
     gtk = {
         enable = true;
 
-        theme = {
-            name = "Gruvbox-Dark";
+        iconTheme = {
+            name = "oomox-gruvbox-dark";
+            package = pkgs.gruvbox-dark-icons-gtk;
         };
 
         cursorTheme = {
             package = pkgs.capitaine-cursors;
             name = "capitaine-cursors";
         };
+
+        colorScheme = "dark";
     };
+    
+    # dconf.settings = {
+    #     "org/gnome/desktop/interface" = {
+    #         color-scheme = "prefer-dark";
+    #         gtk-theme = "Gruvbox-Dark";
+    #     };
+    # };
 }
