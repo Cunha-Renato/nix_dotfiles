@@ -13,6 +13,7 @@
         # File Managers
         nautilus
         yazi
+        file-roller
 	];
 
 	wayland.windowManager.hyprland = {
@@ -188,9 +189,14 @@
             enable = true;
             
             defaultApplications = {
+                # Images
                 "image/png" = [ "swayimg.desktop" ];
                 "image/jpeg" = [ "swayimg.desktop" ];
                 "image/jpg" = [ "swayimg.desktop" ];
+                
+                # ZIP
+                "application/zip" = [ "org.gnome.FileRoller.desktop" ];
+                "application/x-zip-compressed" = [ "org.gnome.FileRoller.desktop" ];
             };
         };
     };
