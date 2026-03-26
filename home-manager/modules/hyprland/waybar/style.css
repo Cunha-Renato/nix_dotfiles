@@ -79,8 +79,31 @@ window#waybar.hidden {
 }
 
 #tray {
-  color: #fe8019;
   background: #161320;
+}
+
+#tray menu {
+    background-color: #282828; /* gruvbox bg */
+    color: #ebdbb2;            /* gruvbox fg */
+    border: 1px solid #504945; /* gruvbox bg3 */
+    border-radius: 8px;
+    padding: 4px;
+}
+
+#tray menu menuitem {
+    padding: 0px;
+    margin: 0px;
+    border-radius: 4px;
+}
+
+#tray menu menuitem:hover {
+    background-color: #fabd2f; /* gruvbox yellow */
+    color: #161320;
+}
+
+#tray menu separator {
+    background-color: #161320;
+    margin: 4px 0;
 }
 
 #language {
