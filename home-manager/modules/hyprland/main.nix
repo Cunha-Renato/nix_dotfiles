@@ -5,6 +5,7 @@
 		kitty
 		networkmanagerapplet
 		wofi
+        pavucontrol
         # Screenshot
         grim
         slurp
@@ -70,6 +71,11 @@
                     "fade, 1, 2, myBezier"
                     "workspaces, 1, 2, myBezier"
                 ];
+            };
+            
+            device = {
+                name = "logitech-g403-hero-gaming-mouse";
+                sensitivity = -1.0;
             };
             
             input = {
