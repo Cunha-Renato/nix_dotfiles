@@ -9,6 +9,7 @@
         grim
         slurp
         swappy
+        swayimg
 	];
 
 	wayland.windowManager.hyprland = {
@@ -174,6 +175,20 @@
 		};
 	};
 
-	xdg.portal.enable = true;
-	xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    xdg = {
+        portal = {
+            enable = true;
+            extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+        };
+    
+        mimeApps = {
+            enable = true;
+            
+            defaultApplications = {
+                "image/png" = [ "swayimg.desktop" ];
+                "image/jpeg" = [ "swayimg.desktop" ];
+                "image/jpg" = [ "swayimg.desktop" ];
+            };
+        };
+    };
 }

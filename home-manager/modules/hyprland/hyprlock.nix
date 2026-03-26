@@ -37,7 +37,7 @@
                 inner_color = "rgba(161632ff)";
                 outline_thickness = 0;
                 shadow_passes = 0;
-                placeholder_text = "Enter password";
+                placeholder_text = " ";
             }];
         };
     };

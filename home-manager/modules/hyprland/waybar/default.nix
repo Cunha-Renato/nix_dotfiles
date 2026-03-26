@@ -24,9 +24,9 @@
                 "pulseaudio" = {
                     tooltip = false;
                     scroll-step = 5;
-                    format = "{icon} {volume}%";
-                    format-bluetooth = "{icon} {volume}% ";
-                    format-muted = "󰝟 {volume}%";
+                    format = "{icon}  {volume}%";
+                    format-bluetooth = "{icon}  {volume}% ";
+                    format-muted = "󰝟  {volume}%";
                     format-icons = {
                         "default" = ["" "" ""];
                     };
@@ -35,7 +35,7 @@
 
                 "backlight" = {
                     tooltip = false;
-                    format = " {}%";
+                    format = "  {}%";
                     interval = 1;
                 };
 
@@ -47,8 +47,8 @@
                         warning = 30;
                         critical = 20;
                     };
-                    format = "{icon} {capacity}%";
-                    format-charging = " {capacity}%";
+                    format = "{icon}  {capacity}%";
+                    format-charging = "  {capacity}%";
                     format-time = "{H} h {M} min";
                     format-alt = "{icon} {time}";
                     format-icons = ["" "" "" "" ""];
@@ -62,13 +62,13 @@
 
                 "cpu" = {
                     interval = 15;
-                    format = " {}%";
+                    format = "  {}%";
                     max-length = 10;
                 };
 
                 "memory" = {
                     interval = 15;
-                    format = " {}%";
+                    format = "  {}%";
                     max-length = 10;
                 };
             };
