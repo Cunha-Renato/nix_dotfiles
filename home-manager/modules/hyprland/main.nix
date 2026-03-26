@@ -5,7 +5,6 @@
 		kitty
 		networkmanagerapplet
 		wofi
-        pavucontrol
         # Screenshot
         grim
         slurp
