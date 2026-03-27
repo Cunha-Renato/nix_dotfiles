@@ -1,9 +1,11 @@
 { pkgs, ... }: {
 	home.packages = with pkgs; [
+        blueman
         brightnessctl
 		kitty
 		networkmanagerapplet
 		wofi
+
         # Screenshot
         grim
         slurp
