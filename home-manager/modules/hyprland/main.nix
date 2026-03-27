@@ -86,7 +86,7 @@
             
             input = {
                 kb_layout = "us,br";
-                kb_options = "caps:escape";
+                kb_options = "caps:escape,grp:alt_shift_toggle";
                 touchpad = {
                     natural_scroll = true;
                     scroll_factor = 0.2;

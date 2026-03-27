@@ -15,10 +15,10 @@
                 };
 
                 "hyprland/language" = {
-                    format-en = "US";
-                    format-br = "PT";
+                    format = "{short}";
                     min-length = 5;
                     tooltip = false;
+                    on-click = "hyprctl switchxkblayout current next";
                 };
 
                 "pulseaudio" = {
