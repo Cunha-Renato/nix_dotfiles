@@ -1,30 +1,37 @@
 { pkgs, ... }: {
-	nixpkgs.config.allowUnfree = true;
+    nixpkgs.config.allowUnfree = true;
 
-	home.packages = with pkgs; [
+    home.packages = with pkgs; [
         # AppImage
-		gearlever
+        gearlever
 
         # Editors
-		neovim
-		vscode
+        neovim
+        vscode
 
-		# Programming
-		gcc
-		python311
-		lean4
-		# -> Node
-		nodejs
-		nodePackages.pnpm
-		biome
-		# -> Rust
-		rustc
-		cargo
-		rustfmt
-		clippy
+        # Programming
+        gcc
+        (python312.withPackages (ps: with ps; [
+            pip
+            ipykernel
+            jupyterlab
+        ]))
 
-		# Utils
-		zip
-		unzip
-	];
+        lean4
+
+        # -> Node
+        nodejs
+        nodePackages.pnpm
+        biome
+
+        # -> Rust
+        rustc
+        cargo
+        rustfmt
+        clippy
+
+        # Utils
+        zip
+        unzip
+    ];
 }
