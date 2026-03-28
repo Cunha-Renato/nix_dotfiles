@@ -6,7 +6,6 @@
     };
     security.pam.services.hyprlock = {};
     security.polkit.enable = true;
-    hardware.graphics.enable = true;
     services.getty.autologinUser = "l3gion"; 
 
     # UWSM START
