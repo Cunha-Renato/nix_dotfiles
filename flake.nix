@@ -67,6 +67,13 @@
                 vulkan-loader
                 vulkan-tools
                 mesa
+                pkg-config
+                glib
+                pango
+                cairo
+                gdk-pixbuf
+                gtk3
+                webkitgtk_4_1
             ];
 
             LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
