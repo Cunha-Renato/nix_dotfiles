@@ -6,7 +6,7 @@
         ./hyprpaper.nix
         ./main.nix
         ./swaync.nix
-        ./waybar
         ./rofi.nix
+        ./waybar
 	];
 }

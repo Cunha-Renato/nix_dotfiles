@@ -52,5 +52,31 @@
 
             modules = [ ./home-manager/home.nix ];
         };
+        
+        devShells.${system}.hypr_shell = let
+            pkgs = import nixpkgs { inherit system; };
+        in pkgs.mkShell {
+            name = "hypr_shell";
+
+            packages = with pkgs; [
+                wayland
+                wayland-protocols
+                libxkbcommon
+                vulkan-loader
+                vulkan-tools
+                mesa
+            ];
+
+            LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+                pkgs.wayland
+                pkgs.libxkbcommon
+                pkgs.vulkan-loader
+                pkgs.mesa
+            ];
+
+            shellHook = ''
+                echo "Entered hypr_shell"
+            '';
+        };
     };
 }

@@ -15,5 +15,9 @@
 				"git"
 			];
 		};
+        
+        shellAliases = {
+            hypr-shell = "nix develop ~/nix_dotfiles#hypr_shell";
+        };
 	};
 }
