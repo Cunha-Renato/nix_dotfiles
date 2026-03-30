@@ -25,13 +25,16 @@
         biome
 
         # -> Rust
-        rustc
         cargo
-        rustfmt
         clippy
+        rustc
+        rustfmt
 
         # Utils
         zip
         unzip
     ];
+
+    # Rust.
+    home.sessionVariables.RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
 }
