@@ -59,6 +59,8 @@
             name = "hypr_shell";
 
             packages = with pkgs; [
+                zsh
+
                 wayland
                 wayland-protocols
                 libxkbcommon
@@ -76,6 +78,7 @@
 
             shellHook = ''
                 echo "Entered hypr_shell"
+                exec zsh
             '';
         };
     };
