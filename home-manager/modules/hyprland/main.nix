@@ -111,15 +111,18 @@
 			];
 
 			bind = [
-				"$mainMod,      RETURN, exec, $terminal"
-                "$mainMod,      SPACE, exec, $menu -show drun"
-                ", PRINT, exec, grim -g \"$(slurp)\" - | swappy -f -"
-                "$mainMod,      E, exec, $fileExplorer"
-                "$mainMod,      N, exec, swaync-client -t"
-                "$mainMod,      W, killactive,"
-                "$mainMod,      D, fullscreen, 1"
-                "$mainMod,      A, fullscreen, 0"
-                "$mainMod,      P, pin,"
+				"$mainMod,      RETURN,     exec, $terminal"
+                "$mainMod,      SPACE,      exec, $menu -show drun"
+                ",              PRINT,      exec, grim -g \"$(slurp)\" - | swappy -f -"
+                "$mainMod,      E,          exec, $fileExplorer"
+                "$mainMod,      N,          exec, swaync-client -t"
+                "$mainMod,      W,          killactive,"
+                "$mainMod,      D,          fullscreen, 1"
+                "$mainMod,      A,          fullscreen, 0"
+                "$mainMod,      P,          pin,"
+
+                # Floating windows
+                "$mainMod,      V,          togglefloating,"
 
                 # Power Profiles
                 "$mainMod, F1, exec, powerprofilesctl set power-saver"
@@ -177,6 +180,10 @@
                 ", XF86AudioPause, exec, playerctl play-pause"
                 ", XF86AudioPlay,  exec, playerctl play-pause"
                 ", XF86AudioPrev,  exec, playerctl previous"
+            ];
+            
+            bindm = [
+                "$mainMod,      mouse:272,  movewindow"
             ];
 		};
 	};
