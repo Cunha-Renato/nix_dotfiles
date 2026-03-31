@@ -121,6 +121,11 @@
                 "$mainMod,      A, fullscreen, 0"
                 "$mainMod,      P, pin,"
 
+                # Power Profiles
+                "$mainMod, F1, exec, powerprofilesctl set power-saver"
+                "$mainMod, F2, exec, powerprofilesctl set balanced"
+                "$mainMod, F3, exec, powerprofilesctl set performance"
+
                 # Moving focus
                 "$mainMod, H, movefocus, l"
                 "$mainMod, L, movefocus, r"
