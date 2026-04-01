@@ -56,42 +56,53 @@
         devShells.${system}.hypr_shell = let
             pkgs = import nixpkgs { inherit system; };
         in pkgs.mkShell {
-           name = "hypr_shell";
+            name = "hypr_shell";
 
-           packages = with pkgs; [
-               zsh
+            nativeBuildInputs = with pkgs; [
+                zsh
 
-               wayland
-               wayland-protocols
-               libxkbcommon
-               vulkan-loader
-               vulkan-tools
-               mesa
-               pkg-config
-               glib
-               glib-networking  # WebKit HTTPS support
-               pango
-               cairo
-               gdk-pixbuf
-               gtk3
-               webkitgtk_4_1
-               cacert             # SSL certificates
-           ];
+                # Traditional Window/Renderer
+                wayland
+                wayland-protocols
+                libxkbcommon
+                vulkan-loader
+                vulkan-tools
+                mesa
+               
+                # Tauri
+                pkg-config
+                wrapGAppsHook4
+                # glib
+                # glib-networking  
+                # pango
+                # cairo
+                # gdk-pixbuf
+                # gtk3
+                # webkitgtk_4_1
+                # cacert             
+            ];
 
-           LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
-               pkgs.wayland
-               pkgs.libxkbcommon
-               pkgs.vulkan-loader
-               pkgs.mesa
-           ];
+            buildInputs = with pkgs; [
+                librsvg
+                webkitgtk_4_1
+            ];
 
-           shellHook = ''
-               echo "Entered hypr_shell"
-               export SSL_CERT_FILE="${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
-               export NIX_SSL_CERT_FILE="${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
-               export GIO_MODULE_DIR="${pkgs.glib-networking}/lib/gio/modules"
-               exec zsh
-           '';
+            LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+                pkgs.wayland
+                pkgs.libxkbcommon
+                pkgs.vulkan-loader
+                pkgs.mesa
+            ];
+
+            shellHook = ''
+                echo "Entered hypr_shell"
+                export XDG_DATA_DIRS="$GSETTINGS_SCHEMAS_PATH"
+                export SSL_CERT_FILE="${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
+                export NIX_SSL_CERT_FILE="${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
+                export GIO_MODULE_DIR="${pkgs.glib-networking}/lib/gio/modules"
+                
+                exec zsh
+            '';
         };
     };
 }
