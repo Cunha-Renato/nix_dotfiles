@@ -34,6 +34,7 @@
         zip
         unzip
         qalculate-gtk
+        fastfetch
     ];
 
     # Rust.
