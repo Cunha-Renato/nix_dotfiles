@@ -33,6 +33,7 @@
         # Utils
         zip
         unzip
+        qalculate-gtk
     ];
 
     # Rust.
