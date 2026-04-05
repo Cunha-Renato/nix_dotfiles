@@ -3,8 +3,8 @@
         gtk.enable = true;
         x11.enable = true;
 
-        package = pkgs.capitaine-cursors;
-        name = "capitaine-cursors";
+        package = pkgs.posy-cursors;
+        name = "Posy_Cursor_Mono_Black";
         size = 16;
     };
     
@@ -17,8 +17,8 @@
         };
 
         cursorTheme = {
-            package = pkgs.capitaine-cursors;
-            name = "capitaine-cursors";
+            package = pkgs.posy-cursors;
+            name = "Posy_Cursor_Mono_Black";
         };
 
         colorScheme = "dark";
