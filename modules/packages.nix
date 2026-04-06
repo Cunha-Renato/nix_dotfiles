@@ -14,5 +14,6 @@
 	    kitty
         uwsm
         evtest
+        exfatprogs
     ];
 }
