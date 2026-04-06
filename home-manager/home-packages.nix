@@ -35,6 +35,8 @@
         unzip
         qalculate-gtk
         fastfetch
+        btop
+        discord
     ];
 
     # Rust.
