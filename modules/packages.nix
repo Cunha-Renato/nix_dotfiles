@@ -6,7 +6,6 @@
         enable = true;
         binfmt = true;
     };
-    programs.steam.enable = true;
 
     environment.systemPackages = with pkgs; [
   	    home-manager

@@ -9,5 +9,6 @@
         ./misc.nix
         ./networking.nix
         ./packages.nix
+        ./steam.nix
     ];
 }
