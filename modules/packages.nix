@@ -13,5 +13,6 @@
 	    git
 	    kitty
         uwsm
+        evtest
     ];
 }
