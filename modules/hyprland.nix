@@ -7,6 +7,7 @@
     security.pam.services.hyprlock = {};
     security.polkit.enable = true;
     services.getty.autologinUser = "l3gion"; 
+    services.gvfs.enable = true;
 
     # UWSM START
     environment.loginShellInit = ''

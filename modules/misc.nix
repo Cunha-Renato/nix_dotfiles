@@ -3,6 +3,10 @@
 
     security.rtkit.enable = true;
 
+    # PENDRIVE
+    services.udisks2.enable = true;
+
+    # AUDIO
     services.printing.enable = true;
     services.pulseaudio.enable = false;
     services.pipewire = {

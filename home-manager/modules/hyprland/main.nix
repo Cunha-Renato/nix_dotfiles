@@ -18,6 +18,9 @@
         file-roller
 	];
 
+    # PENDRIVE
+    services.udiskie.enable = true;
+
 	wayland.windowManager.hyprland = {
 		enable = true;
         systemd.enable = true;
