@@ -36,6 +36,9 @@
         qalculate-gtk
         fastfetch
         btop
+        gnome-disk-utility
+
+        # Gaming
         discord
     ];
 

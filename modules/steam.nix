@@ -4,5 +4,5 @@
     boot.kernelModules = [ 
         "hid_sony"
         "joydev"
-    ]; # ps4 Controller
+    ];
 }
