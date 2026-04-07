@@ -15,5 +15,6 @@
         uwsm
         evtest
         exfatprogs
+        pavucontrol
     ];
 }
