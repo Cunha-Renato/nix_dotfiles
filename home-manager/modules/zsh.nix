@@ -18,6 +18,7 @@
         
         shellAliases = {
             hypr-shell = "nix develop ~/nix_dotfiles#hypr_shell";
+            perf-shell = "nix develop ~/nix_dotfiles#perf_shell";
         };
 	};
 }
