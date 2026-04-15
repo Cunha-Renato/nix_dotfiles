@@ -62,7 +62,7 @@
 
                 "cpu" = {
                     interval = 15;
-                    format = "  {}%";
+                    format = "  {usage}%";
                     max-length = 10;
                 };
 
