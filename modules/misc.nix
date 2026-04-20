@@ -16,12 +16,12 @@
         pulse.enable = true;
         jack.enable = true;
 
-        extraConfig.pipewire."92-low-latency" = {
-            context.properties = {
-                default.clock.rate = 48000;
-                default.clock.quantum = 4096;
-                default.clock.min-quantum = 512;
-                default.clock.max-quantum = 8192;
+        extraConfig.pipewire."0-audio-fix" = {
+            "context.properties" = {
+                "default.clock.rate" = 48000;
+                "default.clock.quantum" = 4096;
+                "default.clock.min-quantum" = 512;
+                "default.clock.max-quantum" = 8192;
             };
         };
     };
