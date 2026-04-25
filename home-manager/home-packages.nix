@@ -21,7 +21,7 @@
 
         # -> Node
         nodejs
-        nodePackages.pnpm
+        pnpm
         biome
 
         # -> Rust
