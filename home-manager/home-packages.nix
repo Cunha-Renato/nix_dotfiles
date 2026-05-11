@@ -17,7 +17,7 @@
             jupyterlab
         ]))
 
-        lean4
+        elan
 
         # -> Node
         nodejs
