@@ -14,7 +14,10 @@
         (python312.withPackages (ps: with ps; [
             pip
             ipykernel
-            jupyterlab
+            jupyter
+            notebook
+            matplotlib
+            numpy
         ]))
 
         elan
