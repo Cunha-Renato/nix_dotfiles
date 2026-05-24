@@ -69,7 +69,9 @@
                     vulkan-loader
                     vulkan-tools
                     mesa
-                   
+                    udev
+                    pkg-config 
+
                     # Tauri
                     pkg-config
                     wrapGAppsHook4
