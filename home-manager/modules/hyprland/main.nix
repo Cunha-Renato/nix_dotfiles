@@ -11,12 +11,29 @@
         slurp
         swappy
         swayimg
+
+        # Programming
+        wayland
+        wayland-protocols
+        libxkbcommon
+        vulkan-loader
+        vulkan-tools
+        mesa
         
         # File Managers
         nautilus
         yazi
         file-roller
 	];
+
+    home.sessionVariables = {
+        LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+            pkgs.wayland
+            pkgs.libxkbcommon
+            pkgs.vulkan-loader
+            pkgs.mesa
+        ];
+    };
 
     # PENDRIVE
     services.udiskie.enable = true;
