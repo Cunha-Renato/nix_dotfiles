@@ -14,11 +14,11 @@
 
     outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: let
         system = "x86_64-linux"; 
-        homeStateVersion = "25.11";
+        homeStateVersion = "26.05";
         user = "l3gion";
         hosts = [
-            { hostName = "l3gion-pc"; stateVersion = "25.11"; }
-            { hostName = "l3gion-laptop"; stateVersion = "25.11"; }
+            { hostName = "l3gion-pc"; stateVersion = "26.05"; }
+            { hostName = "l3gion-laptop"; stateVersion = "26.05"; }
         ];
 
         makeSystem = { hostName, stateVersion}: nixpkgs.lib.nixosSystem {
