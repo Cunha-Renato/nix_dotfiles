@@ -1,6 +1,8 @@
 {
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+    programs.nix-ld.enable = true;
+
     security.rtkit.enable = true;
 
     # PENDRIVE
