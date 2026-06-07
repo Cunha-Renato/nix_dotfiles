@@ -33,9 +33,9 @@
 
             "window" = {
                 background-color = mkLiteral "@bg0";
-                border = mkLiteral "2px solid";
+                border = mkLiteral "1px solid";
                 border-color = mkLiteral "#504945";
-                border-radius = mkLiteral "12px";
+                border-radius = mkLiteral "0px";
                 width = mkLiteral "500px";
                 padding = mkLiteral "3px";
             };
@@ -48,7 +48,7 @@
 
             "inputbar" = {
                 background-color = mkLiteral "@bg1";
-                border-radius = mkLiteral "8px";
+                border-radius = mkLiteral "0px";
                 padding = mkLiteral "8px 2px";
                 children = mkLiteral "[prompt, entry]";
                 spacing = mkLiteral "8px";
@@ -73,7 +73,7 @@
 
             "element" = {
                 background-color = mkLiteral "transparent";
-                border-radius = mkLiteral "8px";
+                border-radius = mkLiteral "0px";
                 padding = mkLiteral "8px";
                 spacing = mkLiteral "8px";
                 orientation = mkLiteral "horizontal";
