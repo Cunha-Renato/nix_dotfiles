@@ -12,6 +12,7 @@
 
                 "custom/launcher" = {
                     format = "❄";
+                    on-click = "rofi -show drun";
                 };
 
                 "hyprland/language" = {

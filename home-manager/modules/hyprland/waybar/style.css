@@ -1,6 +1,6 @@
 * {
   border: none;
-  border-radius: 999px;
+  border-radius: 0px;
   font-family: "JetbrainsMono Nerd Font";
   font-weight: 600;
   font-size: 12px;
@@ -63,7 +63,7 @@ window#waybar.hidden {
   transition: none;
   color: #fbf1c7;
   background: transparent;
-  border-radius: 999px;
+  border-radius: 0px;
   padding: 0px 6px; /* thinner buttons */
 }
 
@@ -87,14 +87,14 @@ window#waybar.hidden {
     background-color: #282828; /* gruvbox bg */
     color: #ebdbb2;            /* gruvbox fg */
     border: 1px solid #504945; /* gruvbox bg3 */
-    border-radius: 8px;
+    border-radius: 0px;
     padding: 4px;
 }
 
 #tray menu menuitem {
     padding: 0px;
     margin: 0px;
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 #tray menu menuitem:hover {
