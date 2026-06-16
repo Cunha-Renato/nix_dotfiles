@@ -26,7 +26,6 @@
                     tooltip = false;
                     scroll-step = 5;
                     format = "{icon}  {volume}%";
-                    format-bluetooth = "{icon}  {volume}% ";
                     format-muted = "󰝟  {volume}%";
                     format-icons = {
                         "default" = ["" "" ""];
