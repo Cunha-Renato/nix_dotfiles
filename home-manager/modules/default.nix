@@ -4,6 +4,7 @@
 		./hyprland
 		./ghostty.nix
 		./git.nix
+        ./obs.nix
 		./zsh.nix
 	];
 }
