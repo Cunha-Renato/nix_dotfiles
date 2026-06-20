@@ -40,6 +40,7 @@
         fastfetch
         btop
         gnome-disk-utility
+        obs-studio
 
         # Gaming
         discord
