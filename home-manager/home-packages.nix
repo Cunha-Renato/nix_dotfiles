@@ -17,6 +17,7 @@
             jupyter
             notebook
             matplotlib
+            reportlab
             numpy
         ]))
 
