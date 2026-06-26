@@ -1,4 +1,4 @@
-{ stateVersion, hostName, ... }: {
+{ stateVersion, hostName, pkgs, ... }: {
     imports =
     [ 
         ../../modules
