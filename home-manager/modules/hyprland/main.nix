@@ -12,6 +12,9 @@
         swappy
         swayimg
 
+        # Video
+        celluloid
+
         # Programming
         wayland
         wayland-protocols

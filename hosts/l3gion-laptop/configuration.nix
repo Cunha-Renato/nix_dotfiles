@@ -8,7 +8,12 @@
     networking.hostName = hostName;
     system.stateVersion = stateVersion;
 
-    hardware.graphics.enable = true;
+    hardware.graphics = {
+        enable = true;
+        extraPackages = with pkgs; [
+            libva
+        ];
+    };
     
     services.power-profiles-daemon.enable = true;
 }

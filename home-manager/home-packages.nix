@@ -41,6 +41,11 @@
         fastfetch
         btop
         gnome-disk-utility
+        (pkgs.wrapOBS {
+            plugins = with pkgs.obs-studio-plugins; [
+                obs-vaapi
+            ];
+        })
 
         # Gaming
         discord
